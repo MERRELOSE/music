@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: purple;
+    background-image: url("bg.jpg"), url("bg1.jpg");
+    background-size: 25%, 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, top right;
+
+}
+div{
+    background-color: rgb(206, 20, 20);
+    width: 400px;
+    float: left;
+    text-align: center;
+}
+
+p{
+    float: left;
+    background-color: #069;
+}
+.div1{
+    background-color: rgba(200, 200, 000, 0.9);
+}

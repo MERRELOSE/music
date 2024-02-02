@@ -1,0 +1,103 @@
+body{
+    background-color: rgb(196, 188, 188);
+    font-family: Arial, Helvetica, sans-serif;
+    
+    padding: 0;
+    margin: 0;
+
+
+    
+}
+#papa{
+    height: 744.4px;
+    background-image: url("femina-28-psycho-emotion-en-musique.jpg");
+    background-repeat: no-repeat;
+    background-size: 1420px;
+    background-attachment: local;
+    padding:  0px 0px 0px 70%;
+}
+header {
+    background-color: #ece8e8;
+    color: rgb(75, 73, 73);
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: url("site4.jpg") no-repeat;
+    background-size: 100%;
+    height: 120px;
+  }
+
+  #titre{
+    text-align: center;
+    font-size: 60px;
+    color: beige;
+  }
+  #connexion{
+    font-size: 60px;
+    color: rgb(221, 222, 226);
+    margin-left: -12%;
+    margin-top: 12px;
+  }
+h1{
+    color: rgb(53, 114, 245);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 25px;
+}  
+span{
+    font-size: 45px;
+    font-weight: 25px;
+}  
+h5{
+    color: rgb(41, 35, 35);
+}
+#a1{
+    background-color: white;
+    border-radius: 10px;
+    width: 270px;
+    height: 270px;
+    padding: 20px;
+    margin: 50px;
+                                        
+
+}
+#a2{
+    height: 24px;
+    width: 205px;
+    border-radius: 5px 5px;
+    border-color: #d6d1d1 5px;
+    background-color: aliceblue;
+}
+#a3{
+    height: 24px;
+    width: 205px;
+    border-radius: 5px 5px;
+    background-color: aliceblue;
+}
+#a4{
+    width: 205px;
+    height: 27px;
+    border-radius: 5px 5px;
+    color: rgb(243, 238, 238);
+    background:rgb(0, 110, 255);
+}
+#a5{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+#a7{
+    color: aliceblue;
+    background-color: #d6d1d1;
+    text-decoration-color: #d6d1d1;
+    
+}
+#a6{
+    background-color: rgb(6, 146, 6);
+    border-radius: 5px 5px;
+    width: 205px;
+    height: 27px;
+    color: rgb(243, 238, 238);
+}
