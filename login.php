@@ -9,40 +9,68 @@
 </head>
 <style>
     body{
-    background-color: rgb(196, 188, 188);
+    background-color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
-    
     padding: 0;
     margin: 0;
-
-
-    
 }
 #papa{
     height: 744.4px;
-    background-image: url("femina-28-psycho-emotion-en-musique.jpg");
-    background-repeat: no-repeat;
-    background-size: 1420px;
+    background-image: url("assets/images/femina-28-psycho-emotion-en-musique.jpg");
+    background-size: 100%;
     background-attachment: local;
-    padding:  0px 0px 0px 70%;
+    padding: 0px, 0px, 0px, 60%;
 }
 header {
-    background-color: #ece8e8;
     color: rgb(75, 73, 73);
     display: flex;
-
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background: url("site4.jpg") no-repeat;
-    background-size: 100%;
-    height: 120px;
+    height: 80px;
+}
+.nav-link{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #333333;
+  
   }
+  .nav-link:hover{
+    background-color: #555555;
+  }
+  .nav-link:active {
+    background-color: #222222;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    color: rgb(24, 121, 231);
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 1rem;
+  }
+  
+  nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+  }
+  nav a:hover{
+    color:rgb(24, 121, 231);
+}
 
   #titre{
     text-align: center;
-    font-size: 60px;
-    color: beige;
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(0, 110, 255);
   }
   #connexion{
     font-size: 60px;
@@ -50,11 +78,12 @@ header {
     margin-left: -6%;
     margin-top: 12px;
   }
-h1{
-    color: rgb(53, 114, 245);
+.marquee{
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 30px;
-    font-weight: 25px;
+    font-weight: 50px;
+    margin-bottom: 0.5px;
 }  
 span{
     font-size: 45px;
@@ -64,13 +93,13 @@ h5{
     color: rgb(41, 35, 35);
 }
 #a1{
-    background-color: transparent;
+    background-color: #ffffff;
     border: solid white;
     border-radius: 10px;
     width: 270px;
     height: 270px;
     padding: 15px;
-    margin: -9px;
+    margin: -15px;
                                         
 
 }
@@ -96,7 +125,7 @@ h5{
 }
 #a5{
     text-decoration: none;
-    color: white;
+    color: rgb(75, 73, 73);
     font-family: Arial, sans-serif;
 }
 #a7{
@@ -112,22 +141,34 @@ h5{
     height: 27px;
     color: rgb(243, 238, 238);
 }
+
+form{
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
 </style>
 <body>
 
     <header>
         <h1 id="titre">MéloBooks </h1><br>
-        <h1> <marquee behavior="" direction="">Bienvenue sur Mon site de téléchargement de musique. </marquee></h1>
-        <audio controls="controls " loop="loop" autoplay="autoplay">
-            <source src="solo_mp3.mp3">
-        </audio>
+        <nav>
+            <ul>
+                <li><a href="accueil.php">Accueil</a></li>
+                <li><a href="login.php" class="nav-link">Connexion/Inscription</a></li>
+            </ul>
+        </nav>
     </header>
-    <footer>
     <div id="papa"><br><br>
         
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h2 id="connexion">Connexion </h2>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h2 id="connexion">Connexion </h2>
         <div id="a1">
-            <center>
                 <form action="" method="post">
                     <input type="email" name="email" id="a2" required placeholder="Adresse e-mail..."><br><br>
 
@@ -139,7 +180,6 @@ h5{
                     <hr id="a7"><br>
                     <a href="signup.php"><input type="button" id="a6" value="Créer nouveau compte"></a>
                 </form>
-            </center>
         </div>
         <?php
             if(isset($_POST["submit"])){
@@ -163,10 +203,10 @@ h5{
             }
         ?>
 
-            
-        
+         
     </div>
-    <p>© 2024 Mon site de téléchargement de musique.</p>
+    <footer>
+        <p>© 2024 Copyright - Mélobooks - Designed by Kennedy Merrelose.</p>
     </footer>
 
 </body>

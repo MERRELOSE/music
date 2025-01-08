@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
 </head>
-<link rel="stylesheet" href="signup.css">
+
 <body>
 <?php
         if(isset($_POST["submit"])){
@@ -28,10 +29,17 @@
         }
 
 ?>
+    <header>
+        <h1 id="titre">MéloBooks </h1><br>
+        <nav>
+            <ul>
+                <li><a href="accueil.php">Accueil</a></li>
+                <li><a href="signup.php" class="nav-link">Connexion/Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
     
-        <div>
-            <center>        
-
+        <div>  
                 <p id="p1"><span id="p2"> Inscription</span><br>C'est rapide  et  simple</p>
                 <hr>
                 <form action="" method="post">
@@ -173,15 +181,13 @@
                         <option value="">1946</option>
                         <option value="">1945</option>
                     </select><br>
-            </center>
+
                     <p>Genre</p>       
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="p"><label for="" id="b5">Femme</label><input type="radio" name="genre" id=""></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <span id="p"><label for="" id="b5">Homme</label><input type="radio" name="genre" id=""></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <span id="p"><label for="" id="b5">Personnel</label><input type="radio" name="genre" id="" placeholder=""></span><br><br><br>
-                    
-                    <center>
+                
                     <input type="submit" name="submit" value="S'inscrire" id="b6">
-                    </center>
                 </form>
         </div>
 </body>
